@@ -1,20 +1,20 @@
 import axios from "axios";
-import User from '../models/User';
+import User from '../models/User.js';
 
-const getRating = async (req,res)=>{
-
-}
-
-const getQuestionsUnsolved = async (req,res)=>{
+export const getRating = async (req,res)=>{
 
 }
 
-const getExtraData = async (req,res)=>{
+export const getQuestionsUnsolved = async (req,res)=>{
 
 }
 
-const generateCsv = async (req, res)=>{
+export const getExtraData = async (req,res)=>{
+
+}
+
+export const generateCsv = async (req, res)=>{
     
 }
 
-module.exports = { getRating, getQuestionsUnsolved, getExtraData };
+// module.exports = { getRating, getQuestionsUnsolved, getExtraData };

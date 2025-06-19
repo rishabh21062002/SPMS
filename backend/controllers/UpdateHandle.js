@@ -1,8 +1,8 @@
 import axios from "axios";
-import User from '../models/User';
+import User from '../models/User.js';
 
-const updateHandle = async (req, res)=>{
+export const updateHandle = async (req, res)=>{
     // old handle, new handle, fetch the data and update in db
 }
 
-module.exports = { updateHandle };
+// module.exports = { updateHandle };

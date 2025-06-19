@@ -17,15 +17,16 @@ app.use('/api/codeforces',UserRoute);
 app.use('/api',EnrollmentRoute);
 app.use('/api/user', UserDetailsRoute);
 app.use('/api/handle', UpdateHandleRoute);
-require('./cronjob');
+app.get('/', (req,res)=>{
+  console.log("INside hoem route");
+  res.json({"msg":"Hello World"});
+});
+// import './cronjob';
 // cron job -> fetch updated data for all enrolled students
 // send mail if user haven't solved question for last 7 days
 
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(process.env.MONGO_URI, {})
 .then(() => {
-  app.listen(5000, () => console.log('Server started on port 5000'));
+  app.listen(5001, () => console.log('Server started on port 5001'));
 })
 .catch(err => console.log(err));

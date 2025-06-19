@@ -1,5 +1,5 @@
 import experss from 'express';
-const { getRating, getQuestionsUnsolved, getExtraData, generateCsv } = require('../controllers/UserDetails');
+import { getRating, getQuestionsUnsolved, getExtraData, generateCsv } from '../controllers/UserDetails.js';
 
 const router = experss.Router();
 

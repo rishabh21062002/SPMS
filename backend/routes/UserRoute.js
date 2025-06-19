@@ -3,6 +3,6 @@ import { UserInfo } from '../controllers/UserInfo.js';
 
 const router = express.Router();
 
-router.get('/user/:handle', UserInfo);
+router.post('/user', UserInfo);
 
 export default router;

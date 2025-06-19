@@ -1,5 +1,5 @@
 import express from 'express';
-import { updateHandle } from '../controllers/UpdateHandle';
+import { updateHandle } from '../controllers/UpdateHandle.js';
 
 const router = express.Router();
 
