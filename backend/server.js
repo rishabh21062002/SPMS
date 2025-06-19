@@ -17,7 +17,7 @@ app.use('/api/codeforces',UserRoute);
 app.use('/api',EnrollmentRoute);
 app.use('/api/user', UserDetailsRoute);
 app.use('/api/handle', UpdateHandleRoute);
-
+require('./cronjob');
 // cron job -> fetch updated data for all enrolled students
 // send mail if user haven't solved question for last 7 days
 
