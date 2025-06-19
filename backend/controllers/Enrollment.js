@@ -115,7 +115,7 @@ console.log(handle);
 
 export const getAllUsers = async (req,res)=>{
  try {
-    const users = await User.find().populate('result');
+    const users = await User.find();
     res.json(users);
   } catch (error) {
     console.error("❌ Error fetching users:", error.message);
